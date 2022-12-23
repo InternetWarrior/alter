@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alter timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <main>
+        <div class="timer">
+            <div class="time"><div id="minute">00</div>:<div id="second">00</div></div>
+            <div class="buttons">
+                <button class="time--btns" id="start" >ЗАПУСТИТЬ</button>
+                <button class="time--btns" id="thirty">+30</button>
+                <button class="time--btns" id="tech">ТЕХ</button>
+                <button class="time--btns" id="twenty" >+20</button>
+
+          
+            </div>
+        </div>
+        
+
+        <div class="vote">
+            <h1>Выставить игроков на  голосование</h1>
+            <div class="vote--btns">
+                
+                
+                <div class="vote--div">
+                        <button onclick='vote(this)' value="notVoted" class="vote--btn" id="1">1</button>
+                        <button onclick='vote(this)' value="notVoted" class="vote--btn" id="2">2</button>
+                        <button onclick='vote(this)' value="notVoted" class="vote--btn" id="3">3</button>
+                        <button onclick='vote(this)' value="notVoted" class="vote--btn" id="4">4</button>
+                        <button onclick='vote(this)' value="notVoted" class="vote--btn" id="5">5</button>
+                </div>
+                <div class="vote--div">
+                        <button onclick='vote(this)' value="notVoted" class="vote--btn" id="6">6</button>
+                        <button onclick='vote(this)' value="notVoted" class="vote--btn" id="7">7</button>
+                        <button onclick='vote(this)' value="notVoted" class="vote--btn" id="8">8</button>
+                        <button onclick='vote(this)' value="notVoted" class="vote--btn" id="9">9</button>
+                        <button onclick='vote(this)' value="notVoted" class="vote--btn" id="10">10</button>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="result--div">
+            
+            <div class="result" value = 'Hey'>Никто не выставлен!</div>
+            <div class="result--btns">
+                <button onclick="navigator.clipboard.writeText(':white_check_mark: :white_check_mark: :white_check_mark: :white_check_mark: :white_check_mark: :white_check_mark: ');
+                " class="result--btn">##</button>
+                <button onclick="copy()" class="result--btn">Скапировать</button>
+                <button onclick="clean()" class="result--btn">Очистить</button>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script>const checkingStuff = (e) => { console.log(e) }</script>
+    <script src="app.js"></script>
+
+
+</body>
+</html>
