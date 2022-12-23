@@ -113,12 +113,12 @@ h1{
 
 .vote--btn::after{
 
-    content: url('cross.png') ;
+    content: url('/cross.png') ;
     display: inline-block;
    }
 
 .vote--btn[value="notVoted"]::after{
-    content: url('check.png') ;
+    content: url('/check.png') ;
     display: inline-block;
 }
 
